@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div class="mb-4">
       <label for="item_price" class="block text-gray-600 text-sm font-semibold mb-2">Item Price:</label>
-      <input type="text" name="item_price" value="<?php echo number_format($item['item_price'], 0, ',', '.'); ?>" required class="w-full px-3 py-2 border rounded-md">
+      <input type="text" name="item_price" value="<?php echo $item['item_price']; ?>" required class="w-full px-3 py-2 border rounded-md">
     </div>
     <div class="mb-4">
       <label for="category_id" class="block text-gray-600 text-sm font-semibold mb-2">Category:</label>

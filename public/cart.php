@@ -23,7 +23,7 @@ while ($cartItem = $cartResult->fetch_assoc()) {
 
 <?php include('../components/header.php') ?>
 <div class="bg-gray-50 min-h-screen p-4">
-  <div class="md:w-[40%] mx-auto">
+  <div class="md:w-[40%] mx-auto mt-[10%]">
     <div class="bg-white p-4 rounded">
       <h2 class="text-2xl font-bold text-center mb-6">Rincian Keranjang</h2>
       <table class="w-full">
@@ -52,7 +52,7 @@ while ($cartItem = $cartResult->fetch_assoc()) {
         </tr>
       </table>
     </div>
-    <div class="flex justify-between items-center">
+    <div class="mt-6 flex justify-between items-center">
       <button onclick="checkout()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">Bayar</button>
       <a href="items.php" class="block text-sm font-medium text-green-500">Kembali ke halaman awal</a>
     </div>

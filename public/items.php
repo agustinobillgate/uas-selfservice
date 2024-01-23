@@ -44,7 +44,7 @@ if (!$result) {
         <div class="w-[100px] h-20 bg-black"></div>
         <div class="grid">
           <p class="text-2xl font-bold"><?php echo $row['item_name']; ?></p>
-          <p class="text-lg font-semibold">Rp<?php echo number_format($row['item_price'], 0, ',', '.'); ?></p>
+          <p class="text-lg font-semibold">Rp<?php echo $row['item_price']; ?></p>
           <p><?php echo $row['item_desc']; ?></p>
         </div>
       </div>

@@ -23,7 +23,7 @@ include("../db.php");
       <?php endif; ?>
       <div>
         <p class="text-xl font-semibold mb-2">
-          <?php echo $item['item_name']; ?><br> Rp<?php echo number_format($item['item_price'], 0, ',', '.'); ?>
+          <?php echo $item['item_name']; ?><br> Rp<?php echo $item['item_price']; ?>
         </p>
         <p class="text-gray-600 mb-4"><?php echo $item['item_desc']; ?></p>
       </div>
