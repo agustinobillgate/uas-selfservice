@@ -14,7 +14,10 @@ $result = $conn->query($sql);
   <div class="bg-white p-10 rounded-lg shadow-md md:w-[60%] mx-auto mb-6">
     <div class="flex justify-between">
       <h2 class="text-2xl font-bold">Selamat Datang, <br> Mau Pesan apa hari ini?</h2>
-      <a href="logout.php" class="block text-sm font-medium text-red-500">Logout</a>
+      <div class="grid">
+        <a href="logout.php" class="block text-sm font-medium text-red-500">Logout</a>
+        <a href="cart.php" class="block text-sm font-medium text-blue-500">Keranjang</a>
+      </div>
     </div>
   </div>
   <div class="grid grid-cols-3 gap-4 md:w-[60%] mx-auto">

@@ -10,6 +10,7 @@ include("../db.php");
 <?php include('../components/header.php') ?>
 <div class="container mx-auto my-8">
   <h2 class="text-3xl font-bold mb-4">Admin Dashboard - Items</h2>
+  <a href="admin_dashboard_category.php" class="bg-green-500 text-white py-2 px-4 rounded-md mb-4 inline-block">Menu Category</a>
   <a href="admin_create_item.php" class="bg-blue-500 text-white py-2 px-4 rounded-md mb-4 inline-block">Create Item</a>
   <?php
   $itemsResult = $conn->query("SELECT * FROM tb_item");

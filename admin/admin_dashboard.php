@@ -6,3 +6,4 @@
     <a href="admin_dashboard_item.php" class="block py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600">Item</a>
   </div>
 </div>
+<?php include('../components/footer.php') ?>

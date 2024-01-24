@@ -41,7 +41,11 @@ if (!$result) {
   ?>
     <div class="grid md:flex justify-between items-center bg-white my-2 rounded md:w-[60%] mx-auto p-4 gap-4">
       <div class="flex items-center gap-4">
-        <div class="w-[100px] h-20 bg-black"></div>
+        <?php if (!empty($row['item_image'])) : ?>
+          <img src="<?php echo $row['item_image']; ?>" alt="Item Image" class="object-cover w-16 h-16 mr-4 rounded-md">
+        <?php else : ?>
+          <div class="w-16 h-16 bg-black rounded-md mr-4"></div>
+        <?php endif; ?>
         <div class="grid">
           <p class="text-2xl font-bold"><?php echo $row['item_name']; ?></p>
           <p class="text-lg font-semibold">Rp<?php echo $row['item_price']; ?></p>
